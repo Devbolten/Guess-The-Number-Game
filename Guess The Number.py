@@ -11,6 +11,12 @@ if number_guessed == number :
     
 
 while number_guessed != number and number_guessed > number:
+    if i == 1 and number_guessed != number:
+        print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+        break
+    if i == 1 and number_guessed > number:
+        print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+        break
     i = i - 1
     print("TOO HIGH! Enter a lower number.")
     print ("(",i,"ATTEMPTS LEFT )")
@@ -26,24 +32,31 @@ while number_guessed != number and number_guessed > number:
                 print("TOO LOW! Enter a higher number.")
         print ("( 1 ATTEMPT LEFT )")
         number_guessed = int(input("INCORRECT! Please enter your last number:"))
-        if i == 1 and number_guessed != number:
-            print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
-            break
+
         if i == 1 and number_guessed == number:
             print("Number",number,"is correct! WELL DONE!")
             break
+        
     if i == 1 and number_guessed != number:
          break
     if i == 1 and number_guessed == number:
-        break    
+        break
+    
     else:
          while number_guessed != number and number_guessed < number:
+                if i == 1 and number_guessed != number:
+                   print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+                   break
+                if i == 1 and number_guessed > number:
+                   print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+                   break
                 i = i - 1
                 print("TOO LOW! Enter a higher number.")
                 print ("(",i,"ATTEMPTS LEFT )")
                 number_guessed = int(input("INCORRECT! Please enter your number again:"))
                 if number_guessed == number :
                    print ("Number",number,"is correct! WELL DONE!")
+                   break
                 while i == 2:
                     i = i - 1
                     if number_guessed > number:
@@ -52,27 +65,32 @@ while number_guessed != number and number_guessed > number:
                         print("TOO LOW! Enter a higher number.")
                     print ("( 1 ATTEMPT LEFT )")
                     last_number_guessed = int(input("INCORRECT! Please enter your last number:"))
-                    if i == 1 and number_guessed == number :
-                      print("Number",number,"is correct! WELL DONE!")
-                    if i == 1 and number_guessed != number:
-                        print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
-                        break   
+   
                     if i == 1 and number_guessed == number:
                         print("Number",number,"is correct! WELL DONE!")
                         break
+                 
                 if i == 1 and number_guessed != number:
                       break
                 if i == 1 and number_guessed == number:
-                      break                  
+                      break
+
+
     
 while number_guessed != number and number_guessed < number:
+    if i == 1 and number_guessed != number:
+        print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+        break
+    if i == 1 and number_guessed > number:
+        print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+        break
     i = i - 1
     print("TOO LOW! Enter a higher number.")
     print ("(",i,"ATTEMPTS LEFT )")
     number_guessed = int(input("INCORRECT! Please enter your number again:"))
     if number_guessed == number :
         print("Number",number,"is correct! WELL DONE!")
-        break     
+        break
     while i == 2:
         i = i - 1
         if number_guessed > number:
@@ -83,21 +101,26 @@ while number_guessed != number and number_guessed < number:
         number_guessed = int(input("INCORRECT! Please enter your last number:"))
         if i == 1 and number_guessed == number :
             print("Number",number,"is correct! WELL DONE!")
-        if i == 1 and number_guessed != number:
-            print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
-            break
+        
     if i == 1 and number_guessed != number:
             break
     if i == 1 and number_guessed == number:
-            break    
+            break   
     else:
         while number_guessed != number and number_guessed > number:
+                if i == 1 and number_guessed != number:
+                    print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+                    break
+                if i == 1 and number_guessed > number:
+                    print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
+                    break
                 i = i - 1
                 print("TOO HIGH! Enter a higher number.")
                 print ("(",i,"ATTEMPTS LEFT )")
                 number_guessed = int(input("INCORRECT! Please enter your number again:"))
                 if number_guessed == number :
                     print ("Number",number,"is correct! WELL DONE!")
+                    break
                 while i == 2:
                     i = i - 1
                     if number_guessed > number:
@@ -106,9 +129,6 @@ while number_guessed != number and number_guessed < number:
                          print("TOO LOW! Enter a higher number.")
                     print ("( 1 ATTEMPT LEFT )")
                     number_guessed = int(input("INCORRECT! Please enter your last number:"))             
-                    if i == 1 and number_guessed != number:
-                        print("Number was",number,".\nYou have ran out of tries :( GAME OVER!")
-                        break
                     if i == 1 and number_guessed == number:
                         print("Number",number,"is correct! WELL DONE!")
                         break
@@ -116,7 +136,8 @@ while number_guessed != number and number_guessed < number:
                 if i == 1 and number_guessed != number:
                       break
                 if i == 1 and number_guessed == number:
-                      break  
+                      break
+                   
     
 
         
